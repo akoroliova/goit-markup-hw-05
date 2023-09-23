@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -475,9 +479,10 @@ section {
 .company-social {
   display: inline-flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
-.social-text {
+.footer-small-header {
   color: var(--WHITE, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -510,4 +515,118 @@ section {
 .company-social-link:hover,
 .company-social-link:focus {
   background-color: #31d0aa;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.input-field {
+  display: inline-flex;
+  flex-direction: row;
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(46, 47, 66, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 16px;
+}
+
+.input-field::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-button {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  background-color: var(--IRIS, #4d5ae5);
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border: 0;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-align: center;
+  color: var(--WHITE, #fff);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-icon-span {
+  display: inline-flex;
+}
+
+.footer-modal-div {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: relative;
+  width: 408px;
+  background-color: rgba(252, 252, 252, 1);
+  border-radius: 4px;
+}
+
+.modal-close-button-group {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.modal-field:focus-within {
+  border-color: var(--IRIS, #4d5ae5);
 }
