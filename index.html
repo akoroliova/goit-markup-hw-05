@@ -520,12 +520,19 @@
     <div class="footer-modal-div is-open">
       <div class="modal">
         <button class="modal-close-button-group" type="button">X</button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          eaque cumque dignissimos! Expedita unde rerum labore deleniti dolores,
-          fugiat quo quam ad quaerat consequuntur optio quos sint delectus quasi
-          similique!
-        </p>
+        <h2>Leave your contacts and we will call you back</h2>
+        <form name="callback-form">
+          <label class="callback-label"
+            >Name
+            <input type="text" name="user-name" />
+          </label>
+
+          <input id="user-agreements" type="checkbox" />
+          <label for="user-agreements" class="user-agreements-label">
+            I accept the terms and conditions of the
+            <a class="privacy-policy-link" href="/">Privacy Policy</a>
+          </label>
+        </form>
       </div>
     </div>
   </body>
