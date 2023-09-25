@@ -624,7 +624,7 @@ section {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 408px;
@@ -639,12 +639,25 @@ section {
 }
 
 .modal-close-button-group {
-  position: absolute;
+  position: relative;
+  display: flex;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: rgba(231, 233, 252, 1);
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  margin: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-popup-close {
+  position: absolute;
+  fill: rgba(46, 47, 66, 1);
 }
 
 .modal-header {
@@ -701,6 +714,10 @@ section {
   fill: rgba(77, 90, 229, 1);
 }
 
+.callback-div.comment {
+  margin-bottom: 16px;
+}
+
 .callback-textarea {
   height: 120px;
   resize: none;
@@ -711,11 +728,33 @@ section {
   color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
+}
+
+.callback-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-checkbox-check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  border-radius: 2px;
 }
 
 .callback-label.checkbox {
-  display: inline-block;
+  margin-bottom: 0;
+}
+
+.modal-checkbox-icon {
+  opacity: 0;
+}
+
+.checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+  opacity: 1;
 }
 
 .privacy-policy-link {
