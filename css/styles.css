@@ -739,8 +739,8 @@ section {
 }
 
 .modal-checkbox-check {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   border-radius: 2px;
 }
