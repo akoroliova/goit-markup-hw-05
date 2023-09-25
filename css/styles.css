@@ -526,6 +526,15 @@ section {
   align-items: flex-end;
 }
 
+.subscribe-header {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
 .subscribe-label {
   display: flex;
   flex-direction: column;
@@ -544,11 +553,14 @@ section {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 1);
-  background-color: rgba(46, 47, 66, 1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
   font-family: inherit;
   color: rgba(255, 255, 255, 1);
   padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .input-field::placeholder {
@@ -573,10 +585,9 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   background-color: var(--IRIS, #4d5ae5);
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border: 0;
@@ -595,6 +606,10 @@ section {
 
 .subscribe-icon-span {
   display: inline-flex;
+  margin-left: 16px;
+}
+
+.svg-icons.subscribe {
 }
 
 .footer-modal-div {
