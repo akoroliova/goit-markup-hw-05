@@ -803,7 +803,7 @@ section {
   opacity: 0;
 }
 
-.checkbox-input:checked + .checkbox.modal-checkbox-check {
+.checkbox-input:checked + .checkbox > .modal-checkbox-check {
   background-color: var(--OCEAN, #404bbf);
   border: none;
   fill: var(--CLOUD, #f4f4fd);
