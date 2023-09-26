@@ -692,7 +692,8 @@ section {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .callback-div {
@@ -802,7 +803,7 @@ section {
   opacity: 0;
 }
 
-.checkbox-input:checked .modal-checkbox-check {
+.checkbox-input:checked + .checkbox.modal-checkbox-check {
   background-color: var(--OCEAN, #404bbf);
   border: none;
   fill: var(--CLOUD, #f4f4fd);
