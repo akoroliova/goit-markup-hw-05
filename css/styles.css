@@ -604,12 +604,9 @@ section {
   letter-spacing: 0.04em;
 }
 
-.subscribe-icon-span {
+.svg-icons.subscribe {
   display: inline-flex;
   margin-left: 16px;
-}
-
-.svg-icons.subscribe {
 }
 
 .modal-div {
