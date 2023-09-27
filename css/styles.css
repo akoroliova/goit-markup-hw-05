@@ -804,10 +804,6 @@ section {
   color: var(--LIGHT-SLATE, #8e8f99);
 }
 
-.modal-checkbox-icon {
-  opacity: 0;
-}
-
 .checkbox-input:checked + .checkbox > .modal-checkbox-check {
   background-color: var(--OCEAN, #404bbf);
   border: none;
